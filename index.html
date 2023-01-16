@@ -8,13 +8,78 @@
     <link rel="icon" type="image/x-icon" href="./">
 
     <link rel="stylesheet" href="style.css">
-    <script>script.js</script>
+    <script src="script.js"></script>
 
     <!--
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="417de3f2-6372-46e8-bf94-5023e37b0a52" data-blockingmode="auto" type="text/javascript"></script>
     -->
 </head>
+
 <body>
+    <div class="player-panel">
+        <div id="player-1" class="player-inactive">
+            <img src="./icons/circle.png" alt="" class="">Player 1
+        </div>
+        <div id="player-2">
+            <img src="./icons/cross.png" alt="" class="">Player 2
+        </div>
+    </div>
+
+    <div id="line-1" class="horizontal-line" style="top: 39.5%;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 55.5%;"></div>
+    <div id="line-3" class="horizontal-line" style="top: 71%;"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 55.3%; left: 24.3%;"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 55.3%;"></div>
+    <div id="line-6" class="horizontal-line make-vertical" style="top: 55.3%; left: 45.4%;"></div>
+    <div id="line-7" class="horizontal-line" style="transform: rotate(45deg) scaleX(0.0); top: 55.3%; left: 34.9%;"></div>
+    <div id="line-8" class="horizontal-line" style="transform: rotate(-45deg) scaleX(0.0); top: 55.3%; left: 34.9%;"></div>
+
+    <table>
+        <tr>
+            <td onclick="fillShape(0)">
+                <img id="circle-0" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-0" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(1)">
+                <img id="circle-1" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-1" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(2)">
+                <img id="circle-2" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-2" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+        </tr>
+
+        <tr>
+            <td onclick="fillShape(3)">
+                <img id="circle-3" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-3" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(4)">
+                <img id="circle-4" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-4" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(5)">
+                <img id="circle-5" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-5" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+        </tr>
+
+        <tr>
+            <td onclick="fillShape(6)">
+                <img id="circle-6" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-6" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(7)">
+                <img id="circle-7" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-7" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+            <td onclick="fillShape(8)">
+                <img id="circle-8" src="./icons/circle.png" alt="" class="shape d-none">
+                <img id="cross-8" src="./icons/cross.png" alt="" class="shape d-none">
+            </td>
+        </tr>
+    </table>
     
 </body>
 </html>
