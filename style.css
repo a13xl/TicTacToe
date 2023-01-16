@@ -90,6 +90,43 @@ tr td:last-child {
     transform:  rotate(90deg) scaleX(0.0);
 }
 
+.game-over {
+    position: absolute;
+    left: 25%;
+    top: 20rem;
+    width: 50%;
+    z-index: 9;
+    animation: zommIn 225ms ease-in-out;
+}
+
+.restart-btn {
+    position: absolute;
+    bottom: 10%;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.restart-btn:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+@keyframes zoomIn {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 @media (max-width: 458px) {
     
 }
